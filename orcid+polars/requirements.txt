@@ -1,0 +1,8 @@
+certifi==2024.12.14
+charset-normalizer==3.4.1
+flatten-json==0.1.14
+idna==3.10
+polars==1.20.0
+requests==2.32.3
+six==1.17.0
+urllib3==2.3.0
