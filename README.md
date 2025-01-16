@@ -23,3 +23,34 @@ The goal of this hackathon is to develop a publication collection, tracking, and
  - Eric's system: <https://github.com/SCIInstitute/SCIIT-joomla>
  - NASA's SciX: <https://github.com/adsabs>
 
+## Outcomes
+During the hackathon, we discuss multiple existing tools, including some that were new to most, outlined a pipeline to work with existing public database to create and maintain private collections, indefied key points to test and prototype, and developed prototype tools for local database management and scapping tools.  
+
+The key descisions were:
+ - To pursue [Academic Tracker](https://github.com/MoseleyBioinformaticsLab/academic_tracker) as an option to interface with public databases.  See [PublicationScrapping](https://github.com/SCIInstitute/PublicationSystemHackathon/tree/main/PublicationScraping) folder.  
+ - Tabular format will likely be too limiting for expected use cases.  These experiments are found in this repo in [orcid+polars](https://github.com/SCIInstitute/PublicationSystemHackathon/tree/main/orcid%2Bpolars).  PR#2.
+ - Use MongoDB for data storage with data validation.  The schema will be a modification of [ORCiD's](https://github.com/ORCID/orcid-model/tree/master).  We have a script with a prototype in place (see [notes_jakew.md](https://github.com/SCIInstitute/PublicationSystemHackathon/blob/main/notes_jakew.md)).  PR#1
+ - Build on  these prototypes and test cases using these tools to find areas for future improvement.
+ 
+ The use cases we identified:
+  - Shared database of publications for SCI members
+  - Ability to make a private database with custom organization
+ 
+ ## next steps:
+  - Work with IT to find location for shared database and UI
+  - expand prototypes and uses cases to meet existing needs
+  - build interface with bibtex, github pages, and others
+  
+  
+## More Notes
+
+Additional notes are found in the other READMEs, [google drive](https://docs.google.com/document/d/1L2mKG3f87lNohPMsirCJHXGM91JM3Ezzx5qxXGxjMok/edit?tab=t.0)) (with recording and AI summary), and on the [slack channel](https://join.slack.com/share/enQtODMxMDE2NzI3ODAzNi01OTk2ZDFlOTFiYmU4NDdmMmI5NTc4NTY5NzM1ZmRhNDQyZmVkMDFiODIyMjliNDIwZDIzYjNjNDJkMjk0YTJi)
+
+
+
+  
+
+ 
+
+ 
+
