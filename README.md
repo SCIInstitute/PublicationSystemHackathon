@@ -11,10 +11,10 @@ The goal of this hackathon is to develop a publication collection, tracking, and
 
 
 ## Preliminary Schedule
-11:00 -12:00 — Description of problem. Existing technologies. Brainstorm requirements
-12:00 - 1:00 — Lunch (provided). Requirements discussion.  
-1:00 - 1:30 — Identify key pieces, form working groups
-1:30 - 3:30 — Report progress and plans
+ - 11:00 -12:00 — Description of problem. Existing technologies. Brainstorm requirements
+ - 12:00 - 1:00 — Lunch (provided). Requirements discussion.  
+ - 1:00 - 1:30 — Identify key pieces, form working groups
+ - 1:30 - 3:30 — Report progress and plans
 
 
 ## Previous Work
