@@ -6,7 +6,7 @@ SCRIPT_DIR=os.path.dirname(os.path.realpath(__file__))
 
 DEFAULT_CONFIG_LOCATION=SCRIPT_DIR+"/authorConfigFiles/"
 DEFAULT_ACADEMIC_TRACKER_LOCATION="academic_tracker"
-DEFAULT_ARGUMENTS="--test --no-ORCID --verbose"
+DEFAULT_ARGUMENTS=["--test", "--no-ORCID", "--verbose"]
 DEFAULT_OUTFILE_LOCATION="./logFiles/"
 
 def updatePubs(author="all",arguments=DEFAULT_ARGUMENTS,script_loc=DEFAULT_ACADEMIC_TRACKER_LOCATION,config_loc=DEFAULT_CONFIG_LOCATION):
