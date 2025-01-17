@@ -23,7 +23,6 @@ def updatePubs(author="all",arguments=DEFAULT_ARGUMENTS,script_loc=DEFAULT_ACADE
 	date = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 	logfile_name=f'{DEFAULT_OUTFILE_LOCATION}{author}-{date}.log'
 	logging.basicConfig(
-	    filename=logfile_name,  # Log file name
 	    level=logging.INFO,     # Log level
 	    format='%(asctime)s - %(levelname)s - %(message)s',  # Log format
 	    datefmt='%Y-%m-%d %H:%M:%S',  # Date format
