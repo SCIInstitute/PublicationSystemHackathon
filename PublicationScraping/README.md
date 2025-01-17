@@ -23,3 +23,9 @@ The default options are:
 Output files will be generated for each author. Each will be in a time stamped folder called tracker-test-yymmddhhmm
 
 Consol log files will be written to a log folder in the calling directory.
+
+
+
+The json2bibtex.py is a first pass at converting the json output of academic tracker into a bibtex ready format.
+
+python json2bibtex.py convert --inFile <input.json> --outFile <output.bib> --prefix SomePrefix:
