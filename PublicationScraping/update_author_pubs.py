@@ -32,7 +32,7 @@ def updatePubs(author="all",arguments=DEFAULT_ARGUMENTS,script_loc=DEFAULT_ACADE
     ]
 	)
 
-	arguments = [f"{config_loc}{author}.json"] + arguments
+	arguments = ["author_search", f"{config_loc}{author}.json"] + arguments
 	runCommand = [script_loc] + arguments
 	logging.info(f'Run command {runCommand}')
 	result = subprocess.run(runCommand, text=True, capture_output=True)
