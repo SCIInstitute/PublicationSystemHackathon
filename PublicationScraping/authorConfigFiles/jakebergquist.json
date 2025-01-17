@@ -11,10 +11,10 @@
                  "email_body": "<body>",    
                  "email_subject": "<subject>"   
              },
-         "authors" : ["Rob MacLeod"] 
+         "authors" : ["Jake Bergquist"] 
          }
   },
-      "ORCID_search" : {//This is Jake's specific orcid info so that he can make the api calls
+      "ORCID_search" : {
          "ORCID_key": "0000-0002-4586-6911",
          "ORCID_secret": "<ORCID_secret>"
   },
@@ -33,12 +33,12 @@
           "email_subject": "<subject>"  
   },
       "Authors" : {
-         "Rob MacLeod": {
-                  "first_name" : "Rob",
-                  "last_name" : "MacLeod",
-                  "pubmed_name_search" : "Rob MacLeod",
-                  "email": "macleod@sci.utah.edu", 
-                  "ORCID": "0000-0002-0000-0356", 
+         "Jake Bergquist": {
+                  "first_name" : "Jake",
+                  "last_name" : "Bergquist",
+                  "pubmed_name_search" : "Jake Bergquist",
+                  "email": "jbergquist@sci.utah.edu", 
+                  "ORCID": "0000-0002-4586-6911", 
                   "affiliations" : ["University of Utah", "Scientific Computing and Imaging Institute"] 
                }
   }
