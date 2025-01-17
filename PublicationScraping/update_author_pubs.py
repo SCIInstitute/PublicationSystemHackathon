@@ -19,13 +19,17 @@ def logInfo(message,logFile=None):
 	'''
 	print(message)
 	if logFile is not None:
-		message>>logFile
+		with open(logFile, "a") as log:
+			log.write(message)
 
 
 def updatePubs(author="all",arguments=DEFAULT_ARGUMENTS,script_loc=DEFAULT_ACADEMIC_TRACKER_LOCATION,config_loc=DEFAULT_CONFIG_LOCATION,depth=0):
-	
+	logfile_name=f'{DEFAULT_OUTFILE_LOCATION}{author}-{date}.log'
+	if not os.path.isdir(DEFAULT_OUTFILE_LOCATION):
+		os.mkdir(DEFAULT_OUTFILE_LOCATION)
 
 	if depth > RECURSION_LIMIT:
+		logInfo("RECURSION LIMIT HIT. SOMETHING IS WRONG WITH AUTHOR LIST.",logfile_name)
 		return
 	if author == "all":
 		configFiles = glob.glob(f'{config_loc}*.json')
@@ -36,7 +40,6 @@ def updatePubs(author="all",arguments=DEFAULT_ARGUMENTS,script_loc=DEFAULT_ACADE
 
 	# Configure logging
 	date = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-	logfile_name=f'{DEFAULT_OUTFILE_LOCATION}{author}-{date}.log'
 
 	logInfo(f'Running pub search for {author}',logfile_name)
 
