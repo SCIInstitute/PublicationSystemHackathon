@@ -19,7 +19,7 @@ def logInfo(message,logFile=None):
 	'''
 	print(message)
 	if logFile is not None:
-		print(message)>>logFile
+		message>>logFile
 
 
 def updatePubs(author="all",arguments=DEFAULT_ARGUMENTS,script_loc=DEFAULT_ACADEMIC_TRACKER_LOCATION,config_loc=DEFAULT_CONFIG_LOCATION,depth=0):
