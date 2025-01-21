@@ -83,11 +83,15 @@ class pub:
 		doi 	= bibFieldFormat(pubDict['doi'], 'doi')
 		date 	= bibFieldFormat(date, 'date')
 		pmid 	= bibFieldFormat(pubDict['pubmed_id'], 'pmid')
+		pmcid 	= bibFieldFormat(pubDict['PMCID'],'pmcid')
 		grants 	= bibFieldFormat(pubDict['grants'], 'grants')
 
-		otherFields = dict(zip(['doi','date','pmid','grants'],[doi,date,pmid,grants]))
+		otherFields = dict(zip(['doi','date','pmid','pmcid','grants'],[doi,date,pmid,pmcid,grants]))
+		pubType = 'article'
+		if "proceedings" in title.lower():
+			pubType = 'InProceedings'
+		return cls(pubKey,title,authors,journal,year,pubType,otherFields)
 
-		return cls(pubKey,title,authors,journal,year,'article',otherFields)
 
 
 
@@ -102,6 +106,7 @@ class pub:
 		baseStr=baseStr[:-2]#remove last comma
 		baseStr+='\n}\n'
 		return baseStr
+
 	def __repr__(self):
 		return self.__str__()
 

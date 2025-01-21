@@ -24,6 +24,7 @@ def logInfo(message,logFile=None):
 
 
 def updatePubs(author="all",arguments=DEFAULT_ARGUMENTS,script_loc=DEFAULT_ACADEMIC_TRACKER_LOCATION,config_loc=DEFAULT_CONFIG_LOCATION,depth=0):
+	date = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 	logfile_name=f'{DEFAULT_OUTFILE_LOCATION}{author}-{date}.log'
 	if not os.path.isdir(DEFAULT_OUTFILE_LOCATION):
 		os.mkdir(DEFAULT_OUTFILE_LOCATION)
@@ -39,7 +40,7 @@ def updatePubs(author="all",arguments=DEFAULT_ARGUMENTS,script_loc=DEFAULT_ACADE
 		return
 
 	# Configure logging
-	date = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+	
 
 	logInfo(f'Running pub search for {author}',logfile_name)
 
