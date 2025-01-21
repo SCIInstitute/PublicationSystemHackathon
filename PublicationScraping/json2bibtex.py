@@ -98,6 +98,7 @@ class pub:
 
 
 
+
 	def __str__(self):
 		baseStr = "@" + self.pubType + "{" + self.pubKey + ",\n"
 		for field in self.fields:
